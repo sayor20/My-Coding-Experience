@@ -22,3 +22,24 @@ public class demo {
 		System.out.println("Unique");
 	}
 }
+
+//program to reverse a c-based string
+
+
+public class demo{
+
+	public static void main(String[] args) {
+		
+		String input="sathish";
+		reversestring(input);		
+	}
+	
+	private static void reversestring(String test) {
+		StringBuilder reverse=new StringBuilder();
+		int i;
+		for(i=test.length()-1;i>=0;i--)
+			reverse.append(test.charAt(i));
+		reverse.append('\0');
+		System.out.println(reverse);
+	}
+}
